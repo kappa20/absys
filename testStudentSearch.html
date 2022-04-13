@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search</title>
+</head>
+<body>
+    <input type="text" placeholder="FullName ..." onkeyup='loadDoc(`getHint.php?name=${this.value}`,myFunction)'>
+    Suggestion :<p id="suggestion"></p>
+    <script>
+        const suggest = document.getElementById("suggestion");
+        function loadDoc(url,myFunction){
+            var xhttp = new XMLHttpRequest();
+            xhttp.onreadystatechange = function(){
+                if(xhttp.readyState == 4 && xhttp.status == 200){
+                    myFunction(this);
+                }
+            }
+            xhttp.open("GET",url,true);
+            xhttp.send()
+        }
+        function myFunction(xhttp){
+            suggest.innerHTML = xhttp.responseText;
+        }
+    </script>
+</body>
+</html>
