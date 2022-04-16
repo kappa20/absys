@@ -1,0 +1,40 @@
+
+
+.search-sugg{
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    padding: 250px 0;
+}
+.search-sugg input{
+    width: 100%;
+    height: 40px;
+    padding: 10px;
+    outline: none;
+}
+.search-sugg ul{
+    width: 100%;
+    background-color: rgb(221, 221, 221);
+}
+.search-containter{
+    width: 60%;
+    height: 330px;
+    overflow-y:hidden;
+    list-style-type: none;
+    padding: 5px 5px;
+}
+.search-sugg ul li{
+    padding: 5px 5px;
+    cursor: pointer;
+    font-family: sans-serif;
+}
+.search-sugg ul li:hover{
+    background-color: rgb(231, 231, 231);
+}
+html{
+    scroll-behavior: smooth
+}
+.body-container{
+    height: max-content;
+}
