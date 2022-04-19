@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+  padding: 4em 40%;
+  text-align: center;
+}
+
+select {
+  appearance: none;
+  background-color: lightcyan;
+  background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/1255/caret--down-15.png");
+  background-position: right;
+  background-repeat: no-repeat;
+  border-color: #b3cccc;
+  border-radius: 0.2em;
+  border-style: solid;
+  border-width: 1px;
+  border-right-color: #869999;
+  border-bottom-color: #869999;
+  color: black;
+  padding: 1em 0.5em;
+  width: 100%;
+  box-shadow: 0 0 2 black;
+}
+select > option{
+    padding: 1em 0.5em;
+}
+select::-ms-expand {
+  display: none;
+}
+    </style>
+</head>
+<body>
+    <select name='options'>
+        <option value='option-1'>Option 1</option>
+        <option value='option-2'>Option 2</option>
+        <option value='option-3'>Option 3</option>
+        <option value='option-3' disabled>Option 4</option>
+        <option value='option-3' disabled>Option 5</option>
+        <option value='option-3'>Option 6</option>
+      </select>
+</body>
+</html>
