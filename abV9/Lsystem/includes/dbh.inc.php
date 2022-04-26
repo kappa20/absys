@@ -2,7 +2,7 @@
 
     $servername = "localhost";
     $dbUsername = "root";
-    $password = "root";
+    $password = "hakimofppt@@2019";
     $dbname = "absys";
     $dbport = 3306;
     
